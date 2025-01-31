@@ -22,4 +22,6 @@
 
 🔗 How to Use This Project 1️⃣ Download the dataset (Bookings-40000-Rows.xlsx). 2️⃣ Run the SQL queries in booking_database.sql using MySQL or PostgreSQL. 3️⃣ Open OLA_Daskboard_.pbix in Power BI to explore visualizations. 4️⃣ Modify & analyze data based on new insights!
 
-📢 Connect With Me 🔗 GitHub: sahazadalam 🔗 LinkedIn: Sahazad Alam Ansiri
+📢 Connect With Me:
+🔗 GitHub: sahazadalam
+🔗 LinkedIn: Sahazad Alam Ansiri
