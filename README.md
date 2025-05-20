@@ -25,3 +25,35 @@
 📢 Connect With Me:
 🔗 GitHub: sahazadalam
 🔗 LinkedIn: Sahazad Alam Ansiri
+
+
+
+
+def main():
+    filename = "data.txt"
+    
+    # Create file with 10 lines
+    with open(filename, "w") as f:
+        for i in range(10):
+            f.write(f"Line {i}\n")
+    
+    try:
+        pos = int(input("Enter line number (0-9) to read: "))
+        if pos < 0 or pos > 9:
+            print("Invalid position!")
+            return
+    except ValueError:
+        print("Please enter a valid integer.")
+        return
+
+    # Open the file to read the specific line
+    with open(filename, "r") as f:
+        for _ in range(pos):  # Skip lines up to the desired one
+            f.readline()
+        line = f.readline()  # Read the target line
+        print(f"Line at position {pos}: {line.strip()}")
+
+# Entry point
+if __name__ == "__main__":
+    main()
+
