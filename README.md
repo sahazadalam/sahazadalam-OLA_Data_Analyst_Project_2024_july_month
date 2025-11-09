@@ -1,59 +1,96 @@
-🚖🚖🚖🚖🚖 OLA Data Analyst Project**🚖🚖🚖🚖🚖🚖🚖
+OLA Ride Booking Analysis - Data Analytics Project
+📊 Project Overview
+A comprehensive data analysis project examining OLA ride booking patterns using SQL for data querying and Power BI for interactive dashboard visualization. This project analyzes 40,000+ ride records to uncover valuable business insights about customer behavior, cancellation trends, and revenue patterns.
 
-📌 Project Overview: This project analyzes OLA ride bookings using SQL and Power BI. The dataset contains 40,000 rows of ride details, cancellations, distances, and ratings. The goal is to extract key insights and visualize them using Power BI dashboards.
+🎯 Business Objectives
+Analyze ride booking patterns and success rates
 
-📂 Files in This Repository File Name and Description 📊 Bookings-40000-Rows.xlsx ------> Raw dataset containing ride booking details 🛠 booking_database.sql ------------> SQL queries for data analysis 📈 OLA_Daskboard_.pbix ------------>Power BI dashboard for visualization 📄 README.md --------------------->Project documentation
+Identify key cancellation reasons and trends
 
-🔍 Dataset Overview The dataset contains various columns, including: ✔️ Booking Status -----> (Success, Canceled, Incomplete) ✔️ Vehicle Type ------->(Auto, Sedan, SUV, Mini, etc.) ✔️ Pickup & Drop Locations --->(Bengaluru areas) ✔️ Cancellation Reasons-----> (By customer/driver) ✔️ Ride Distance & Booking Value ✔️ Customer & Driver Ratings
+Understand customer preferences for vehicle types
 
-🛠️ SQL Queries Used Here are some key SQL queries used in the project:
+Optimize pricing and service strategies through data-driven insights
 
-📌 1. Retrieve all successful bookings: SELECT * FROM booking WHERE Booking_Status = 'Success';
+🛠️ Technical Implementation
+Data Analysis & Processing
+Tools Used: SQL, Power BI, Excel
 
-📌 2. Find the average ride distance per vehicle type: SELECT Vehicle_Type, AVG(Ride_Distance) AS avg_distance FROM booking GROUP BY Vehicle_Type;
+Dataset: 40,000+ ride booking records
 
-📌 3. Get the top 5 customers who booked the highest rides: SELECT Customer_ID, COUNT(Booking_ID) AS total_rides FROM booking GROUP BY Customer_ID ORDER BY total_rides DESC LIMIT 5;
+Key Metrics: Booking status, vehicle types, cancellation reasons, ride distances, customer ratings
 
-📌 4. Find the total revenue from successful bookings: SELECT SUM(Booking_Value) AS total_successful_value FROM booking WHERE Booking_Status = 'Success'; (More queries available in booking_database.sql)
+SQL Analysis Highlights
+Extracted successful booking patterns and revenue metrics
 
-📊 Power BI Dashboard Insights Here are some key insights from the Power BI dashboard (ola_.pbix): ✔️ 62% of rides were successful ✔️ Most common cancellation reason → "Driver not moving to pickup" ✔️ Prime Sedan is the most booked vehicle type ✔️ Higher ride demand on weekends & match days ✔️ Peak booking hours: 6 PM - 9 PM
+Analyzed average ride distances by vehicle type
 
-🚀 Power BI Visualizations Include: ✅ Ride Volume Over Time ✅ Booking Status Breakdown ✅ Revenue by Payment Method ✅ Customer & Driver Ratings Comparison ✅ Cancellation Trends & Reasons
+Identified top customers and peak booking periods
 
-🔗 How to Use This Project 1️⃣ Download the dataset (Bookings-40000-Rows.xlsx). 2️⃣ Run the SQL queries in booking_database.sql using MySQL or PostgreSQL. 3️⃣ Open OLA_Daskboard_.pbix in Power BI to explore visualizations. 4️⃣ Modify & analyze data based on new insights!
+Calculated cancellation trends and reasons
 
-📢 Connect With Me:
-🔗 GitHub: sahazadalam
-🔗 LinkedIn: Sahazad Alam Ansiri
+Power BI Dashboard Features
+Interactive Visualizations: Ride volume trends, booking status breakdown
 
+Key Performance Indicators: 62% success rate, peak hours (6 PM - 9 PM)
 
+Business Insights: Prime Sedan as most popular vehicle, weekend demand spikes
 
+📈 Key Findings
+Booking Performance
+✅ 62% Success Rate - Majority of bookings completed successfully
 
-def main():
-    filename = "data.txt"
-    
-    # Create file with 10 lines
-    with open(filename, "w") as f:
-        for i in range(10):
-            f.write(f"Line {i}\n")
-    
-    try:
-        pos = int(input("Enter line number (0-9) to read: "))
-        if pos < 0 or pos > 9:
-            print("Invalid position!")
-            return
-    except ValueError:
-        print("Please enter a valid integer.")
-        return
+📊 Peak Hours - Highest demand between 6 PM - 9 PM
 
-    # Open the file to read the specific line
-    with open(filename, "r") as f:
-        for _ in range(pos):  # Skip lines up to the desired one
-            f.readline()
-        line = f.readline()  # Read the target line
-        print(f"Line at position {pos}: {line.strip()}")
+🚗 Popular Vehicle - Prime Sedan most frequently booked
 
-# Entry point
-if __name__ == "__main__":
-    main()
+Cancellation Analysis
+❌ Top Cancellation Reason - "Driver not moving to pickup location"
 
+📅 Trend Patterns - Higher cancellations during specific time slots
+
+🚀 Skills Demonstrated
+Technical Skills
+Data Querying: Advanced SQL for data extraction and analysis
+
+Data Visualization: Power BI dashboard creation and storytelling
+
+Data Processing: Excel for initial data preparation and cleaning
+
+Business Intelligence: Translating raw data into actionable insights
+
+Analytical Skills
+Pattern recognition in large datasets
+
+Root cause analysis for cancellations
+
+Customer behavior analysis
+
+Performance metric tracking
+
+📁 Project Files
+Bookings-40000-Rows.xlsx - Raw dataset
+
+booking_database.sql - SQL queries for analysis
+
+OLA_Dashboard.pbix - Interactive Power BI dashboard
+
+💼 Business Impact
+This analysis provides OLA with actionable insights to:
+
+Reduce cancellation rates by addressing driver response issues
+
+Optimize vehicle allocation based on demand patterns
+
+Improve customer satisfaction through service enhancements
+
+Increase revenue by targeting peak hours and popular services
+
+👨‍💻 About the Analyst
+Sahazad Alam
+Data Analyst | SQL Expert | Power BI Developer
+
+🔗 GitHub: github.com/sahazadalam
+
+💼 LinkedIn: Sahazad Alam Ansari
+
+📧 Email: sahazadalam02@gmail.com
